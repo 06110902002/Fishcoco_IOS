@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3E389A820B2B8DF0043DBD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389A720B2B8DF0043DBD5 /* AppDelegate.m */; };
+		C3E389AB20B2B8DF0043DBD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389AA20B2B8DF0043DBD5 /* ViewController.m */; };
+		C3E389AE20B2B8DF0043DBD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E389AC20B2B8DF0043DBD5 /* Main.storyboard */; };
+		C3E389B020B2B8DF0043DBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E389AF20B2B8DF0043DBD5 /* Assets.xcassets */; };
+		C3E389B320B2B8DF0043DBD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E389B120B2B8DF0043DBD5 /* LaunchScreen.storyboard */; };
+		C3E389B620B2B8DF0043DBD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389B520B2B8DF0043DBD5 /* main.m */; };
+		C3E389C020B2B8DF0043DBD5 /* fiscocoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389BF20B2B8DF0043DBD5 /* fiscocoTests.m */; };
+		C3E389CB20B2B8DF0043DBD5 /* fiscocoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389CA20B2B8DF0043DBD5 /* fiscocoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3E389BC20B2B8DF0043DBD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E3899B20B2B8DE0043DBD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E389A220B2B8DE0043DBD5;
+			remoteInfo = fiscoco;
+		};
+		C3E389C720B2B8DF0043DBD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E3899B20B2B8DE0043DBD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E389A220B2B8DE0043DBD5;
+			remoteInfo = fiscoco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3E389A320B2B8DE0043DBD5 /* fiscoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiscoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E389A620B2B8DF0043DBD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3E389A720B2B8DF0043DBD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3E389A920B2B8DF0043DBD5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C3E389AA20B2B8DF0043DBD5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3E389AD20B2B8DF0043DBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3E389AF20B2B8DF0043DBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3E389B220B2B8DF0043DBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3E389B420B2B8DF0043DBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E389B520B2B8DF0043DBD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3E389BB20B2B8DF0043DBD5 /* fiscocoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fiscocoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E389BF20B2B8DF0043DBD5 /* fiscocoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fiscocoTests.m; sourceTree = "<group>"; };
+		C3E389C120B2B8DF0043DBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E389C620B2B8DF0043DBD5 /* fiscocoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fiscocoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E389CA20B2B8DF0043DBD5 /* fiscocoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fiscocoUITests.m; sourceTree = "<group>"; };
+		C3E389CC20B2B8DF0043DBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3E389A020B2B8DE0043DBD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E389B820B2B8DF0043DBD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E389C320B2B8DF0043DBD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3E3899A20B2B8DE0043DBD5 = {
+			isa = PBXGroup;
+			children = (
+				C3E389A520B2B8DE0043DBD5 /* fiscoco */,
+				C3E389BE20B2B8DF0043DBD5 /* fiscocoTests */,
+				C3E389C920B2B8DF0043DBD5 /* fiscocoUITests */,
+				C3E389A420B2B8DE0043DBD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3E389A420B2B8DE0043DBD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389A320B2B8DE0043DBD5 /* fiscoco.app */,
+				C3E389BB20B2B8DF0043DBD5 /* fiscocoTests.xctest */,
+				C3E389C620B2B8DF0043DBD5 /* fiscocoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3E389A520B2B8DE0043DBD5 /* fiscoco */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389A620B2B8DF0043DBD5 /* AppDelegate.h */,
+				C3E389A720B2B8DF0043DBD5 /* AppDelegate.m */,
+				C3E389A920B2B8DF0043DBD5 /* ViewController.h */,
+				C3E389AA20B2B8DF0043DBD5 /* ViewController.m */,
+				C3E389AC20B2B8DF0043DBD5 /* Main.storyboard */,
+				C3E389AF20B2B8DF0043DBD5 /* Assets.xcassets */,
+				C3E389B120B2B8DF0043DBD5 /* LaunchScreen.storyboard */,
+				C3E389B420B2B8DF0043DBD5 /* Info.plist */,
+				C3E389B520B2B8DF0043DBD5 /* main.m */,
+			);
+			path = fiscoco;
+			sourceTree = "<group>";
+		};
+		C3E389BE20B2B8DF0043DBD5 /* fiscocoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389BF20B2B8DF0043DBD5 /* fiscocoTests.m */,
+				C3E389C120B2B8DF0043DBD5 /* Info.plist */,
+			);
+			path = fiscocoTests;
+			sourceTree = "<group>";
+		};
+		C3E389C920B2B8DF0043DBD5 /* fiscocoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389CA20B2B8DF0043DBD5 /* fiscocoUITests.m */,
+				C3E389CC20B2B8DF0043DBD5 /* Info.plist */,
+			);
+			path = fiscocoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3E389A220B2B8DE0043DBD5 /* fiscoco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E389CF20B2B8DF0043DBD5 /* Build configuration list for PBXNativeTarget "fiscoco" */;
+			buildPhases = (
+				C3E3899F20B2B8DE0043DBD5 /* Sources */,
+				C3E389A020B2B8DE0043DBD5 /* Frameworks */,
+				C3E389A120B2B8DE0043DBD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fiscoco;
+			productName = fiscoco;
+			productReference = C3E389A320B2B8DE0043DBD5 /* fiscoco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3E389BA20B2B8DF0043DBD5 /* fiscocoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E389D220B2B8DF0043DBD5 /* Build configuration list for PBXNativeTarget "fiscocoTests" */;
+			buildPhases = (
+				C3E389B720B2B8DF0043DBD5 /* Sources */,
+				C3E389B820B2B8DF0043DBD5 /* Frameworks */,
+				C3E389B920B2B8DF0043DBD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E389BD20B2B8DF0043DBD5 /* PBXTargetDependency */,
+			);
+			name = fiscocoTests;
+			productName = fiscocoTests;
+			productReference = C3E389BB20B2B8DF0043DBD5 /* fiscocoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3E389C520B2B8DF0043DBD5 /* fiscocoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E389D520B2B8DF0043DBD5 /* Build configuration list for PBXNativeTarget "fiscocoUITests" */;
+			buildPhases = (
+				C3E389C220B2B8DF0043DBD5 /* Sources */,
+				C3E389C320B2B8DF0043DBD5 /* Frameworks */,
+				C3E389C420B2B8DF0043DBD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E389C820B2B8DF0043DBD5 /* PBXTargetDependency */,
+			);
+			name = fiscocoUITests;
+			productName = fiscocoUITests;
+			productReference = C3E389C620B2B8DF0043DBD5 /* fiscocoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3E3899B20B2B8DE0043DBD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = administrator;
+				TargetAttributes = {
+					C3E389A220B2B8DE0043DBD5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C3E389BA20B2B8DF0043DBD5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3E389A220B2B8DE0043DBD5;
+					};
+					C3E389C520B2B8DF0043DBD5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3E389A220B2B8DE0043DBD5;
+					};
+				};
+			};
+			buildConfigurationList = C3E3899E20B2B8DE0043DBD5 /* Build configuration list for PBXProject "fiscoco" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3E3899A20B2B8DE0043DBD5;
+			productRefGroup = C3E389A420B2B8DE0043DBD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3E389A220B2B8DE0043DBD5 /* fiscoco */,
+				C3E389BA20B2B8DF0043DBD5 /* fiscocoTests */,
+				C3E389C520B2B8DF0043DBD5 /* fiscocoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3E389A120B2B8DE0043DBD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E389B320B2B8DF0043DBD5 /* LaunchScreen.storyboard in Resources */,
+				C3E389B020B2B8DF0043DBD5 /* Assets.xcassets in Resources */,
+				C3E389AE20B2B8DF0043DBD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E389B920B2B8DF0043DBD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E389C420B2B8DF0043DBD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3E3899F20B2B8DE0043DBD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E389AB20B2B8DF0043DBD5 /* ViewController.m in Sources */,
+				C3E389B620B2B8DF0043DBD5 /* main.m in Sources */,
+				C3E389A820B2B8DF0043DBD5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E389B720B2B8DF0043DBD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E389C020B2B8DF0043DBD5 /* fiscocoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E389C220B2B8DF0043DBD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E389CB20B2B8DF0043DBD5 /* fiscocoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3E389BD20B2B8DF0043DBD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E389A220B2B8DE0043DBD5 /* fiscoco */;
+			targetProxy = C3E389BC20B2B8DF0043DBD5 /* PBXContainerItemProxy */;
+		};
+		C3E389C820B2B8DF0043DBD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E389A220B2B8DE0043DBD5 /* fiscoco */;
+			targetProxy = C3E389C720B2B8DF0043DBD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3E389AC20B2B8DF0043DBD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3E389AD20B2B8DF0043DBD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3E389B120B2B8DF0043DBD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3E389B220B2B8DF0043DBD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3E389CD20B2B8DF0043DBD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3E389CE20B2B8DF0043DBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3E389D020B2B8DF0043DBD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fiscoco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiscoco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3E389D120B2B8DF0043DBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fiscoco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiscoco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3E389D320B2B8DF0043DBD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fiscocoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiscocoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fiscoco.app/fiscoco";
+			};
+			name = Debug;
+		};
+		C3E389D420B2B8DF0043DBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fiscocoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiscocoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fiscoco.app/fiscoco";
+			};
+			name = Release;
+		};
+		C3E389D620B2B8DF0043DBD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fiscocoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiscocoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fiscoco;
+			};
+			name = Debug;
+		};
+		C3E389D720B2B8DF0043DBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fiscocoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiscocoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fiscoco;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3E3899E20B2B8DE0043DBD5 /* Build configuration list for PBXProject "fiscoco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E389CD20B2B8DF0043DBD5 /* Debug */,
+				C3E389CE20B2B8DF0043DBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E389CF20B2B8DF0043DBD5 /* Build configuration list for PBXNativeTarget "fiscoco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E389D020B2B8DF0043DBD5 /* Debug */,
+				C3E389D120B2B8DF0043DBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E389D220B2B8DF0043DBD5 /* Build configuration list for PBXNativeTarget "fiscocoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E389D320B2B8DF0043DBD5 /* Debug */,
+				C3E389D420B2B8DF0043DBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E389D520B2B8DF0043DBD5 /* Build configuration list for PBXNativeTarget "fiscocoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E389D620B2B8DF0043DBD5 /* Debug */,
+				C3E389D720B2B8DF0043DBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3E3899B20B2B8DE0043DBD5 /* Project object */;
+}
