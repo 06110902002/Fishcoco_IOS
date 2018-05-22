@@ -1,0 +1,13 @@
+/*
+ Localizable.strings
+ fiscoco
+ 
+ Created by administrator on 2018/5/21.
+ Copyright © 2018年 administrator. All rights reserved.
+ */
+"CFBundleDisplayName" = "两只鱼";
+"homePage" = "首页";
+"Mall" = "商城";
+"Discover" = "发现";
+"Mine" = "我的";
+

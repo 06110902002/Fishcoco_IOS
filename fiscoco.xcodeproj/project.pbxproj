@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F87C941D9E35C87EF7FA0EE /* Pods_fiscoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */; };
 		C3E389A820B2B8DF0043DBD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389A720B2B8DF0043DBD5 /* AppDelegate.m */; };
 		C3E389AB20B2B8DF0043DBD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389AA20B2B8DF0043DBD5 /* ViewController.m */; };
 		C3E389AE20B2B8DF0043DBD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E389AC20B2B8DF0043DBD5 /* Main.storyboard */; };
@@ -15,6 +16,17 @@
 		C3E389B620B2B8DF0043DBD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389B520B2B8DF0043DBD5 /* main.m */; };
 		C3E389C020B2B8DF0043DBD5 /* fiscocoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389BF20B2B8DF0043DBD5 /* fiscocoTests.m */; };
 		C3E389CB20B2B8DF0043DBD5 /* fiscocoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389CA20B2B8DF0043DBD5 /* fiscocoUITests.m */; };
+		C3E389E020B2C0D70043DBD5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389DF20B2C0D70043DBD5 /* BaseViewController.m */; };
+		C3E389E720B2C2EE0043DBD5 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389E620B2C2EE0043DBD5 /* HomeVC.m */; };
+		C3E389EA20B2C35A0043DBD5 /* BottomTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389E920B2C35A0043DBD5 /* BottomTabBarVC.m */; };
+		C3E389ED20B2C4460043DBD5 /* MallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389EC20B2C4460043DBD5 /* MallVC.m */; };
+		C3E389F020B2C46A0043DBD5 /* DiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389EF20B2C46A0043DBD5 /* DiscoverVC.m */; };
+		C3E389F320B2C47C0043DBD5 /* MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E389F220B2C47C0043DBD5 /* MineVC.m */; };
+		C3E389FE20B2C96F0043DBD5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3E38A0020B2C96F0043DBD5 /* Localizable.strings */; };
+		C3E38A0620B2CAE60043DBD5 /* UILabel+LabelHeightAndWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E38A0520B2CAE60043DBD5 /* UILabel+LabelHeightAndWidth.m */; };
+		C3E38A0A20B2CEA50043DBD5 /* UIImage+UIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E38A0820B2CEA50043DBD5 /* UIImage+UIImageExtras.m */; };
+		C3E38A0F20B2D3220043DBD5 /* TopStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E38A0E20B2D3220043DBD5 /* TopStatusView.m */; };
+		C3E38A1220B2E4960043DBD5 /* ic_f1_add.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E38A1120B2E4960043DBD5 /* ic_f1_add.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiscoco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.release.xcconfig"; sourceTree = "<group>"; };
+		6D45FCDA3E12731E49E3325E /* Pods-fiscoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E389A320B2B8DE0043DBD5 /* fiscoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiscoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E389A620B2B8DF0043DBD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3E389A720B2B8DF0043DBD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +66,30 @@
 		C3E389C620B2B8DF0043DBD5 /* fiscocoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fiscocoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E389CA20B2B8DF0043DBD5 /* fiscocoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fiscocoUITests.m; sourceTree = "<group>"; };
 		C3E389CC20B2B8DF0043DBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E389DE20B2C0D70043DBD5 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C3E389DF20B2C0D70043DBD5 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C3E389E520B2C2EE0043DBD5 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		C3E389E620B2C2EE0043DBD5 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		C3E389E820B2C35A0043DBD5 /* BottomTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BottomTabBarVC.h; sourceTree = "<group>"; };
+		C3E389E920B2C35A0043DBD5 /* BottomTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BottomTabBarVC.m; sourceTree = "<group>"; };
+		C3E389EB20B2C4460043DBD5 /* MallVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallVC.h; sourceTree = "<group>"; };
+		C3E389EC20B2C4460043DBD5 /* MallVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallVC.m; sourceTree = "<group>"; };
+		C3E389EE20B2C46A0043DBD5 /* DiscoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverVC.h; sourceTree = "<group>"; };
+		C3E389EF20B2C46A0043DBD5 /* DiscoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverVC.m; sourceTree = "<group>"; };
+		C3E389F120B2C47C0043DBD5 /* MineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineVC.h; sourceTree = "<group>"; };
+		C3E389F220B2C47C0043DBD5 /* MineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineVC.m; sourceTree = "<group>"; };
+		C3E389F620B2C8350043DBD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		C3E389F720B2C8350043DBD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C3E389FF20B2C96F0043DBD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3E38A0120B2C9710043DBD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C3E38A0420B2CAE60043DBD5 /* UILabel+LabelHeightAndWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LabelHeightAndWidth.h"; sourceTree = "<group>"; };
+		C3E38A0520B2CAE60043DBD5 /* UILabel+LabelHeightAndWidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabelHeightAndWidth.m"; sourceTree = "<group>"; };
+		C3E38A0820B2CEA50043DBD5 /* UIImage+UIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImageExtras.m"; sourceTree = "<group>"; };
+		C3E38A0920B2CEA50043DBD5 /* UIImage+UIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImageExtras.h"; sourceTree = "<group>"; };
+		C3E38A0C20B2D0230043DBD5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C3E38A0D20B2D3220043DBD5 /* TopStatusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopStatusView.h; sourceTree = "<group>"; };
+		C3E38A0E20B2D3220043DBD5 /* TopStatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopStatusView.m; sourceTree = "<group>"; };
+		C3E38A1120B2E4960043DBD5 /* ic_f1_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_f1_add.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F87C941D9E35C87EF7FA0EE /* Pods_fiscoco.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +118,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5171A066D5E79030C85850 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79A9F851D5651B7E0011825E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D45FCDA3E12731E49E3325E /* Pods-fiscoco.debug.xcconfig */,
+				4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C3E3899A20B2B8DE0043DBD5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +142,8 @@
 				C3E389BE20B2B8DF0043DBD5 /* fiscocoTests */,
 				C3E389C920B2B8DF0043DBD5 /* fiscocoUITests */,
 				C3E389A420B2B8DE0043DBD5 /* Products */,
+				79A9F851D5651B7E0011825E /* Pods */,
+				2B5171A066D5E79030C85850 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +160,21 @@
 		C3E389A520B2B8DE0043DBD5 /* fiscoco */ = {
 			isa = PBXGroup;
 			children = (
+				C3E38A1020B2DEB20043DBD5 /* res */,
+				C3E38A0B20B2CFFF0043DBD5 /* defines */,
+				C3E38A0720B2CE780043DBD5 /* widgt */,
+				C3E38A0320B2CA8C0043DBD5 /* categories */,
+				C3E389DA20B2BAC00043DBD5 /* model */,
+				C3E389D920B2BAAA0043DBD5 /* view */,
+				C3E389D820B2BA3F0043DBD5 /* controller */,
 				C3E389A620B2B8DF0043DBD5 /* AppDelegate.h */,
 				C3E389A720B2B8DF0043DBD5 /* AppDelegate.m */,
-				C3E389A920B2B8DF0043DBD5 /* ViewController.h */,
-				C3E389AA20B2B8DF0043DBD5 /* ViewController.m */,
 				C3E389AC20B2B8DF0043DBD5 /* Main.storyboard */,
 				C3E389AF20B2B8DF0043DBD5 /* Assets.xcassets */,
 				C3E389B120B2B8DF0043DBD5 /* LaunchScreen.storyboard */,
 				C3E389B420B2B8DF0043DBD5 /* Info.plist */,
 				C3E389B520B2B8DF0043DBD5 /* main.m */,
+				C3E38A0020B2C96F0043DBD5 /* Localizable.strings */,
 			);
 			path = fiscoco;
 			sourceTree = "<group>";
@@ -132,6 +197,109 @@
 			path = fiscocoUITests;
 			sourceTree = "<group>";
 		};
+		C3E389D820B2BA3F0043DBD5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389E420B2C2B00043DBD5 /* mine */,
+				C3E389E320B2C2A30043DBD5 /* discover */,
+				C3E389E220B2C2970043DBD5 /* mall */,
+				C3E389E120B2C2580043DBD5 /* home */,
+				C3E389A920B2B8DF0043DBD5 /* ViewController.h */,
+				C3E389AA20B2B8DF0043DBD5 /* ViewController.m */,
+				C3E389DE20B2C0D70043DBD5 /* BaseViewController.h */,
+				C3E389DF20B2C0D70043DBD5 /* BaseViewController.m */,
+				C3E389E820B2C35A0043DBD5 /* BottomTabBarVC.h */,
+				C3E389E920B2C35A0043DBD5 /* BottomTabBarVC.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		C3E389D920B2BAAA0043DBD5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C3E38A0D20B2D3220043DBD5 /* TopStatusView.h */,
+				C3E38A0E20B2D3220043DBD5 /* TopStatusView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C3E389DA20B2BAC00043DBD5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C3E389E120B2C2580043DBD5 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389E520B2C2EE0043DBD5 /* HomeVC.h */,
+				C3E389E620B2C2EE0043DBD5 /* HomeVC.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		C3E389E220B2C2970043DBD5 /* mall */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389EB20B2C4460043DBD5 /* MallVC.h */,
+				C3E389EC20B2C4460043DBD5 /* MallVC.m */,
+			);
+			path = mall;
+			sourceTree = "<group>";
+		};
+		C3E389E320B2C2A30043DBD5 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389EE20B2C46A0043DBD5 /* DiscoverVC.h */,
+				C3E389EF20B2C46A0043DBD5 /* DiscoverVC.m */,
+			);
+			path = discover;
+			sourceTree = "<group>";
+		};
+		C3E389E420B2C2B00043DBD5 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				C3E389F120B2C47C0043DBD5 /* MineVC.h */,
+				C3E389F220B2C47C0043DBD5 /* MineVC.m */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		C3E38A0320B2CA8C0043DBD5 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				C3E38A0420B2CAE60043DBD5 /* UILabel+LabelHeightAndWidth.h */,
+				C3E38A0520B2CAE60043DBD5 /* UILabel+LabelHeightAndWidth.m */,
+			);
+			path = categories;
+			sourceTree = "<group>";
+		};
+		C3E38A0720B2CE780043DBD5 /* widgt */ = {
+			isa = PBXGroup;
+			children = (
+				C3E38A0920B2CEA50043DBD5 /* UIImage+UIImageExtras.h */,
+				C3E38A0820B2CEA50043DBD5 /* UIImage+UIImageExtras.m */,
+			);
+			path = widgt;
+			sourceTree = "<group>";
+		};
+		C3E38A0B20B2CFFF0043DBD5 /* defines */ = {
+			isa = PBXGroup;
+			children = (
+				C3E38A0C20B2D0230043DBD5 /* Constants.h */,
+			);
+			path = defines;
+			sourceTree = "<group>";
+		};
+		C3E38A1020B2DEB20043DBD5 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				C3E38A1120B2E4960043DBD5 /* ic_f1_add.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +307,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3E389CF20B2B8DF0043DBD5 /* Build configuration list for PBXNativeTarget "fiscoco" */;
 			buildPhases = (
+				E06ED8A6C9AA6E6DF56B0CB7 /* [CP] Check Pods Manifest.lock */,
 				C3E3899F20B2B8DE0043DBD5 /* Sources */,
 				C3E389A020B2B8DE0043DBD5 /* Frameworks */,
 				C3E389A120B2B8DE0043DBD5 /* Resources */,
+				D132E336648ABB99B407F130 /* [CP] Embed Pods Frameworks */,
+				02DC5A74D3D400F2AB803934 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +391,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = C3E3899A20B2B8DE0043DBD5;
 			productRefGroup = C3E389A420B2B8DE0043DBD5 /* Products */;
@@ -239,6 +411,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E389B320B2B8DF0043DBD5 /* LaunchScreen.storyboard in Resources */,
+				C3E38A1220B2E4960043DBD5 /* ic_f1_add.png in Resources */,
+				C3E389FE20B2C96F0043DBD5 /* Localizable.strings in Resources */,
 				C3E389B020B2B8DF0043DBD5 /* Assets.xcassets in Resources */,
 				C3E389AE20B2B8DF0043DBD5 /* Main.storyboard in Resources */,
 			);
@@ -260,14 +434,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02DC5A74D3D400F2AB803934 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D132E336648ABB99B407F130 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06ED8A6C9AA6E6DF56B0CB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3E3899F20B2B8DE0043DBD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C3E389AB20B2B8DF0043DBD5 /* ViewController.m in Sources */,
+				C3E389ED20B2C4460043DBD5 /* MallVC.m in Sources */,
+				C3E389E020B2C0D70043DBD5 /* BaseViewController.m in Sources */,
+				C3E38A0A20B2CEA50043DBD5 /* UIImage+UIImageExtras.m in Sources */,
+				C3E38A0F20B2D3220043DBD5 /* TopStatusView.m in Sources */,
+				C3E389F320B2C47C0043DBD5 /* MineVC.m in Sources */,
 				C3E389B620B2B8DF0043DBD5 /* main.m in Sources */,
+				C3E38A0620B2CAE60043DBD5 /* UILabel+LabelHeightAndWidth.m in Sources */,
+				C3E389E720B2C2EE0043DBD5 /* HomeVC.m in Sources */,
 				C3E389A820B2B8DF0043DBD5 /* AppDelegate.m in Sources */,
+				C3E389EA20B2C35A0043DBD5 /* BottomTabBarVC.m in Sources */,
+				C3E389F020B2C46A0043DBD5 /* DiscoverVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +538,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C3E389AD20B2B8DF0043DBD5 /* Base */,
+				C3E389F620B2C8350043DBD5 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,8 +547,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				C3E389B220B2B8DF0043DBD5 /* Base */,
+				C3E389F720B2C8350043DBD5 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C3E38A0020B2C96F0043DBD5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3E389FF20B2C96F0043DBD5 /* en */,
+				C3E38A0120B2C9710043DBD5 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -381,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -428,6 +672,7 @@
 		};
 		C3E389D020B2B8DF0043DBD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D45FCDA3E12731E49E3325E /* Pods-fiscoco.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +686,7 @@
 		};
 		C3E389D120B2B8DF0043DBD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
