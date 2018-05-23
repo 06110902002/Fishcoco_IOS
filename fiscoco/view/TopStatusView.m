@@ -24,10 +24,12 @@
     
 }
 
--(void) initAttr :(BOOL) rightOptionsiSVisiable{
+-(void) initAttr: (NSString* ) backIconName
+rightOptionsIcon:(NSString*) rightIcon
+rightOptionIsVisiable:(BOOL) visiable{
     
     self.imgBack = [[UIImageView alloc] init];
-    UIImage* back_img = [UIImage imageNamed:@"ic_f1_add"];
+    UIImage* back_img = [UIImage imageNamed:backIconName];
     self.imgBack.image = [back_img imageByScalingToSize:CGSizeMake(45, 45)];
     self.imgBack.userInteractionEnabled = YES;
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
@@ -41,10 +43,10 @@
         make.left.equalTo(self).offset(5);
     }];
     
-    if(rightOptionsiSVisiable){
+    if(visiable){
         
         self.imgMore = [[UIImageView alloc] init];
-        UIImage* more_img = [UIImage imageNamed:@"ic_f1_add"];
+        UIImage* more_img = [UIImage imageNamed:rightIcon];
         self.imgMore.image = [more_img imageByScalingToSize:CGSizeMake(45, 45)];
         self.imgMore.userInteractionEnabled = YES;
         UITapGestureRecognizer *moreTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];

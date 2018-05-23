@@ -17,7 +17,11 @@
 -(CGRect)getScreenSize;                                   //获取屏幕尺寸
 -(void)setStatusBarBackgroundColor:(UIColor *)color;      //设置状态栏颜色
 
--(void) initTitleBar : (BOOL) visiableRightOptions;
+-(void) initTitleBar : (NSString* ) backIconName
+     rightOptionsIcon:(NSString*) rightIcon
+rightOptionIsVisiable:(BOOL) visiable;
+
+
 -(void) setTitle:(NSString*) title;
 
 @end

@@ -27,6 +27,8 @@
 
 -(void) setTitle:(NSString*)title;
 
--(void) initAttr : (BOOL) rightOptionsiSVisiable;
+-(void) initAttr: (NSString* ) backIconName
+rightOptionsIcon:(NSString*) rightIcon
+rightOptionIsVisiable:(BOOL) visiable;
 
 @end

@@ -40,11 +40,16 @@
     return UIStatusBarStyleLightContent;
 }
 
--(void) initTitleBar : (BOOL) visiableRightOptions{
+-(void) initTitleBar : (NSString* ) backIconName
+     rightOptionsIcon:(NSString*) rightIcon
+rightOptionIsVisiable:(BOOL) visiable{
     
     NSLog(@"44----------:%f  height : %f",self.screenSize.size.width, self.screenSize.size.height);
     self.titleBarView = [[TopStatusView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 45)];
-    [self.titleBarView initAttr:visiableRightOptions];
+    [self.titleBarView initAttr:backIconName
+               rightOptionsIcon:rightIcon
+          rightOptionIsVisiable:visiable];
+    
     self.titleBarView.backgroundColor = [UIColor colorWithRed:118.0f / 255.0 green:198.f / 255.0 blue:192.0f / 255.0 alpha:1.0];
     [self.view addSubview:self.titleBarView];
     
