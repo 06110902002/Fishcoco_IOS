@@ -7,7 +7,10 @@
 //
 
 #import "BaseViewController.h"
+@class HomeView;
 
 @interface HomeVC : BaseViewController
+
+@property(nonatomic,strong) HomeView* homeView;
 
 @end

@@ -7,6 +7,9 @@
 //
 
 #import "HomeVC.h"
+#import "HomeView.h"
+#import "Masonry.h"
+#import "Constants.h"
 
 
 @interface HomeVC ()
@@ -17,22 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initTitleBar:@"ic_f1_add" rightOptionsIcon:@"ic_f1_add" rightOptionIsVisiable:TRUE];
-    [self setTitle:@"首页"];
+    //[self initTitleBar:@"air_high_speed" rightOptionsIcon:@"ic_f1_add" rightOptionIsVisiable:TRUE];
+    //[self setTitle:@"首页"];
     [self setStatusBarBackgroundColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
+    
+    self.homeView = [[HomeView alloc] init];
+    [self.homeView buildTopNavbarView];
+    [self.view addSubview:self.homeView];
+    [self.homeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT));
+    }];
     
 }
 
-/*---------点击头部的接口------*/
--(void) onBack{
-    NSLog(@"消息中心------");
-}
-
--(void) onMore{
-    NSLog(@"更多------");
-
-}
-/*---------end--------------*/
 
 
 - (void)didReceiveMemoryWarning {
