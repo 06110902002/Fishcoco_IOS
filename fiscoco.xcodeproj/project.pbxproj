@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5F87C941D9E35C87EF7FA0EE /* Pods_fiscoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */; };
+		C33175D220B8210200B8EDF3 /* SceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D120B8210200B8EDF3 /* SceneView.m */; };
+		C33175D520B8236200B8EDF3 /* HomeSceneEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */; };
 		C3BFF0DE20B6D7AB001EFBF0 /* electric_machine_progress_bar_fill.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFEF6020B6D792001EFBF0 /* electric_machine_progress_bar_fill.png */; };
 		C3BFF0DF20B6D7AB001EFBF0 /* infrared_ray_air_mode_heat_n.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFEF6120B6D792001EFBF0 /* infrared_ray_air_mode_heat_n.png */; };
 		C3BFF0E020B6D7AB001EFBF0 /* electric_machine_circle_button_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFEF6220B6D793001EFBF0 /* electric_machine_circle_button_bg.png */; };
@@ -433,6 +435,10 @@
 		0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiscoco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.release.xcconfig"; sourceTree = "<group>"; };
 		6D45FCDA3E12731E49E3325E /* Pods-fiscoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.debug.xcconfig"; sourceTree = "<group>"; };
+		C33175D020B8210200B8EDF3 /* SceneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneView.h; sourceTree = "<group>"; };
+		C33175D120B8210200B8EDF3 /* SceneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneView.m; sourceTree = "<group>"; };
+		C33175D320B8236200B8EDF3 /* HomeSceneEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSceneEntity.h; sourceTree = "<group>"; };
+		C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSceneEntity.m; sourceTree = "<group>"; };
 		C3BFEF6020B6D792001EFBF0 /* electric_machine_progress_bar_fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electric_machine_progress_bar_fill.png; sourceTree = "<group>"; };
 		C3BFEF6120B6D792001EFBF0 /* infrared_ray_air_mode_heat_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infrared_ray_air_mode_heat_n.png; sourceTree = "<group>"; };
 		C3BFEF6220B6D793001EFBF0 /* electric_machine_circle_button_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electric_machine_circle_button_bg.png; sourceTree = "<group>"; };
@@ -911,9 +917,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C33175CF20B820A900B8EDF3 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				C33175D020B8210200B8EDF3 /* SceneView.h */,
+				C33175D120B8210200B8EDF3 /* SceneView.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
 		C3BFF25C20B6D9D5001EFBF0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				C33175D320B8236200B8EDF3 /* HomeSceneEntity.h */,
+				C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1016,6 +1033,7 @@
 		C3E389E120B2C2580043DBD5 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				C33175CF20B820A900B8EDF3 /* ui */,
 				C3BFF25C20B6D9D5001EFBF0 /* model */,
 				6B834E8620B5A8D3001D0493 /* view */,
 				C3E389E520B2C2EE0043DBD5 /* HomeVC.h */,
@@ -2048,7 +2066,9 @@
 				C3E389E720B2C2EE0043DBD5 /* HomeVC.m in Sources */,
 				C3E389A820B2B8DF0043DBD5 /* AppDelegate.m in Sources */,
 				C3E389EA20B2C35A0043DBD5 /* BottomTabBarVC.m in Sources */,
+				C33175D520B8236200B8EDF3 /* HomeSceneEntity.m in Sources */,
 				C3E389F020B2C46A0043DBD5 /* DiscoverVC.m in Sources */,
+				C33175D220B8210200B8EDF3 /* SceneView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,8 +14,10 @@
 @property(nonatomic,strong) TopStatusView* titleBarView;
 @property(nonatomic,strong) UISegmentedControl* segment;
 @property(nonatomic,strong) UICollectionView* sceneListView;
+@property(nonatomic,strong) NSArray* sceneDataList;
 
 
 -(void) buildTopNavbarView;
+
 
 @end

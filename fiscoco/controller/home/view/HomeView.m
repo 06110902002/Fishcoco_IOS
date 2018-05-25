@@ -9,6 +9,8 @@
 #import "HomeView.h"
 #import "Constants.h"
 #import "Masonry.h"
+#import "SceneView.h"
+#import "HomeSceneEntity.h"
 
 @implementation HomeView
 
@@ -21,6 +23,14 @@
 }
 
 -(void) buildTopNavbarView{
+    
+    self.sceneDataList = [NSMutableArray array];
+    for(int i = 0; i < 7; i ++){
+        
+        HomeSceneEntity* homeSceneEntity = [[HomeSceneEntity alloc] init];
+        [homeSceneEntity setSceneName:[NSString stringWithFormat:@"场景%d",i]];
+        
+    }
     
     //添加一张背景图
     UIImageView* topBgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"magnetic_door_title_bg"]];
@@ -85,10 +95,10 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell =  [collectionView dequeueReusableCellWithReuseIdentifier:@"sceneItem" forIndexPath:indexPath];
+    SceneView *cell =  [collectionView dequeueReusableCellWithReuseIdentifier:@"sceneItem" forIndexPath:indexPath];
     if (!cell ) {
         NSLog(@"cell为空,创建cell");
-        cell = [[UICollectionViewCell alloc] init];
+        cell = [[SceneView alloc] init];
     }
     cell.backgroundColor = [UIColor yellowColor];
     return cell;
