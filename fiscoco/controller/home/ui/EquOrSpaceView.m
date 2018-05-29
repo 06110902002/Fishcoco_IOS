@@ -54,8 +54,14 @@
     _isGrid = isGrid;
     
     if (isGrid) {
-
-        [self.title mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+        [self.icon mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self).offset(10);
+            make.size.mas_equalTo(CGSizeMake(60.0, 30.0));
+            make.centerX.equalTo(self);
+        }];
+        
+        [self.title mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(60.0, 30.0));
             make.top.equalTo(self.icon.mas_bottom).offset(10);
             make.centerX.equalTo(self);
@@ -63,7 +69,13 @@
 
     } else {
 
-        [self.title mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.icon mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(40.0, 40.0));
+            make.leftMargin.mas_offset(10);
+            make.centerY.equalTo(self);
+        }];
+        
+        [self.title mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(60.0, 30.0));
             make.leftMargin.mas_offset(60);
             make.centerY.equalTo(self);
@@ -102,7 +114,7 @@
     self.icon.image = [UIImage imageNamed:iconName];
     self.title.text = data.name;
     
-    NSLog(@"79-----------:%@",data.name);
+    NSLog(@"105-----------:%@",data.name);
 }
 
 -(void) recycRes{

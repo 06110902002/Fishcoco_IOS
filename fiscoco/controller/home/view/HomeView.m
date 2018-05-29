@@ -177,6 +177,7 @@
         [self.equAndSpaceListView setCollectionViewLayout:self.equAndSpaceLayout animated:true];
         [self.gridCellItemView setIsGrid:false];
     }
+    [self.equAndSpaceListView updateConstraintsIfNeeded];
    // [self.equAndSpaceListView reloadData];
     [button setImage:[UIImage imageNamed:self.curSwitchBtnImgName] forState:UIControlStateNormal];
     
