@@ -10,6 +10,8 @@
 		5F87C941D9E35C87EF7FA0EE /* Pods_fiscoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */; };
 		C33175D220B8210200B8EDF3 /* SceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D120B8210200B8EDF3 /* SceneView.m */; };
 		C33175D520B8236200B8EDF3 /* HomeSceneEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */; };
+		C368624D20BBF50E005E7598 /* EquOrSpaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C368624C20BBF50E005E7598 /* EquOrSpaceView.m */; };
+		C368625020BBF553005E7598 /* EquOrSpaceEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C368624F20BBF553005E7598 /* EquOrSpaceEntity.m */; };
 		C3BFF0DE20B6D7AB001EFBF0 /* electric_machine_progress_bar_fill.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFEF6020B6D792001EFBF0 /* electric_machine_progress_bar_fill.png */; };
 		C3BFF0DF20B6D7AB001EFBF0 /* infrared_ray_air_mode_heat_n.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFEF6120B6D792001EFBF0 /* infrared_ray_air_mode_heat_n.png */; };
 		C3BFF0E020B6D7AB001EFBF0 /* electric_machine_circle_button_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFEF6220B6D793001EFBF0 /* electric_machine_circle_button_bg.png */; };
@@ -439,6 +441,10 @@
 		C33175D120B8210200B8EDF3 /* SceneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneView.m; sourceTree = "<group>"; };
 		C33175D320B8236200B8EDF3 /* HomeSceneEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSceneEntity.h; sourceTree = "<group>"; };
 		C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSceneEntity.m; sourceTree = "<group>"; };
+		C368624B20BBF50E005E7598 /* EquOrSpaceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EquOrSpaceView.h; sourceTree = "<group>"; };
+		C368624C20BBF50E005E7598 /* EquOrSpaceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EquOrSpaceView.m; sourceTree = "<group>"; };
+		C368624E20BBF553005E7598 /* EquOrSpaceEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EquOrSpaceEntity.h; sourceTree = "<group>"; };
+		C368624F20BBF553005E7598 /* EquOrSpaceEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EquOrSpaceEntity.m; sourceTree = "<group>"; };
 		C3BFEF6020B6D792001EFBF0 /* electric_machine_progress_bar_fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electric_machine_progress_bar_fill.png; sourceTree = "<group>"; };
 		C3BFEF6120B6D792001EFBF0 /* infrared_ray_air_mode_heat_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infrared_ray_air_mode_heat_n.png; sourceTree = "<group>"; };
 		C3BFEF6220B6D793001EFBF0 /* electric_machine_circle_button_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electric_machine_circle_button_bg.png; sourceTree = "<group>"; };
@@ -922,6 +928,8 @@
 			children = (
 				C33175D020B8210200B8EDF3 /* SceneView.h */,
 				C33175D120B8210200B8EDF3 /* SceneView.m */,
+				C368624B20BBF50E005E7598 /* EquOrSpaceView.h */,
+				C368624C20BBF50E005E7598 /* EquOrSpaceView.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -931,6 +939,8 @@
 			children = (
 				C33175D320B8236200B8EDF3 /* HomeSceneEntity.h */,
 				C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */,
+				C368624E20BBF553005E7598 /* EquOrSpaceEntity.h */,
+				C368624F20BBF553005E7598 /* EquOrSpaceEntity.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -2067,7 +2077,9 @@
 				C3E389A820B2B8DF0043DBD5 /* AppDelegate.m in Sources */,
 				C3E389EA20B2C35A0043DBD5 /* BottomTabBarVC.m in Sources */,
 				C33175D520B8236200B8EDF3 /* HomeSceneEntity.m in Sources */,
+				C368625020BBF553005E7598 /* EquOrSpaceEntity.m in Sources */,
 				C3E389F020B2C46A0043DBD5 /* DiscoverVC.m in Sources */,
+				C368624D20BBF50E005E7598 /* EquOrSpaceView.m in Sources */,
 				C33175D220B8210200B8EDF3 /* SceneView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

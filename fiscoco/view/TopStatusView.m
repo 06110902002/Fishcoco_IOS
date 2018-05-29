@@ -32,13 +32,14 @@ rightOptionIsVisiable:(BOOL) visiable{
     UIImage* back_img = [UIImage imageNamed:backIconName];
     self.imgBack.image = [back_img imageByScalingToSize:CGSizeMake(45, 45)];
     self.imgBack.userInteractionEnabled = YES;
+    self.imgBack.contentMode = UIViewContentModeScaleAspectFit;
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     [self.imgBack addGestureRecognizer:singleTap];
     [self addSubview:self.imgBack];
     
     [self.imgBack mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.size.mas_equalTo(CGSizeMake(45.0, 45.0));
+        make.size.mas_equalTo(CGSizeMake(35.0, 35.0));
         make.centerY.equalTo(self);
         make.left.equalTo(self).offset(5);
     }];
