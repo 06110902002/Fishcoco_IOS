@@ -25,7 +25,7 @@
 }
 
 -(void) buildTopNavbarView{
-    
+    self.equOrSpaceItemList = [NSMutableArray array];
     self.sceneDataList = [NSMutableArray array];
     for(int i = 0; i < 4; i ++){
         
@@ -170,17 +170,21 @@
     if([self.curSwitchBtnImgName isEqualToString:@"list"]){
         self.curSwitchBtnImgName = @"gongge";
         [self.equAndSpaceListView setCollectionViewLayout:self.equAndSpaceGridLayout animated:true];
-        [self.gridCellItemView setIsGrid:true];
+
+        for(id item in self.equOrSpaceItemList) {
+            [(EquOrSpaceView*)item setIsGrid:true];
+        }
         
     }else{
         self.curSwitchBtnImgName = @"list";
         [self.equAndSpaceListView setCollectionViewLayout:self.equAndSpaceLayout animated:true];
-        [self.gridCellItemView setIsGrid:false];
+        for(id item in self.equOrSpaceItemList) {
+            [(EquOrSpaceView*)item setIsGrid:false];
+        }
     }
     [self.equAndSpaceListView updateConstraintsIfNeeded];
-   // [self.equAndSpaceListView reloadData];
+    [self.equAndSpaceListView reloadData];
     [button setImage:[UIImage imageNamed:self.curSwitchBtnImgName] forState:UIControlStateNormal];
-    
 }
 
 //返回section个数
@@ -191,7 +195,7 @@
 //定义展示的UICollectionViewCell的个数 //返回每个分区的item个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    if([collectionView isKindOfClass:[self.sceneListView class]]){
+    if(collectionView.tag == 23){
         return [self.sceneDataList count];
     }
     return [self.equOrSpaceList count];
@@ -213,15 +217,23 @@
         
     }else{
         
-        self.gridCellItemView =  [collectionView dequeueReusableCellWithReuseIdentifier:@"equItem" forIndexPath:indexPath];
-        if (!self.gridCellItemView) {
-            self.gridCellItemView = [[EquOrSpaceView alloc] init];
+        EquOrSpaceView* gridCellItemView =  [collectionView dequeueReusableCellWithReuseIdentifier:@"equItem" forIndexPath:indexPath];
+        if (!gridCellItemView) {
+            gridCellItemView = [[EquOrSpaceView alloc] init];
         }
-        [self.gridCellItemView setIsGrid:false];
-        [self.gridCellItemView initItemView];
+       
+        
+        if(![self.equOrSpaceItemList containsObject:gridCellItemView]){
+            
+            [gridCellItemView setIsGrid:false];
+            [gridCellItemView initItemView];
+            [self.equOrSpaceItemList addObject:gridCellItemView];
+        }
+        
         EquOrSpaceEntity* model = ((EquOrSpaceEntity* )self.equOrSpaceList[indexPath.row]);
-        [self.gridCellItemView bindData:model];
-        return self.gridCellItemView;
+        [gridCellItemView bindData:model];
+    
+        return gridCellItemView;
     }
 }
 

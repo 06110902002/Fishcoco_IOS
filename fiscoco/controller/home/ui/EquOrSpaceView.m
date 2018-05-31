@@ -57,7 +57,7 @@
     
         [self.icon mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self).offset(10);
-            make.size.mas_equalTo(CGSizeMake(60.0, 30.0));
+            make.size.mas_equalTo(CGSizeMake(50.0, 50.0));
             make.centerX.equalTo(self);
         }];
         
@@ -84,7 +84,7 @@
 }
 
 -(void)bindData:(EquOrSpaceEntity *)data{
-    
+    self.data = data;
     NSString* iconName = nil;
     switch (data.type) {
         case 0:{
@@ -114,8 +114,45 @@
     self.icon.image = [UIImage imageNamed:iconName];
     self.title.text = data.name;
     
-    NSLog(@"105-----------:%@",data.name);
 }
+
+-(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    UITouch *touch = [touches anyObject];
+    self.startPos = [touch locationInView:[touch view]];
+    NSLog(@"125---------touchesBegan:%@, posX:%f",self.data.name,self.startPos.x);
+}
+-(void) touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+}
+
+-(void) touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    if(self.isGrid){
+        UITouch *touch = [touches anyObject];
+        CGPoint endPos = [touch locationInView:[touch view]];
+        
+        if(abs((int)(endPos.x - self.startPos.x)) >= 30){
+            [self.layer addAnimation:[self buildAnim:1.0 totateType:1] forKey:@"rotationAnimation"];
+        }
+    }
+    
+}
+
+-(CABasicAnimation*) buildAnim:(CFTimeInterval )time totateType:(NSInteger) type{
+    
+    if(!self.mAnim){
+        
+        self.mAnim = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
+        self.mAnim.toValue = [NSNumber numberWithFloat: M_PI];
+        self.mAnim.duration = time;
+        self.mAnim.cumulative = YES;
+        self.mAnim.repeatCount = 0;
+    }
+    return self.mAnim;
+    
+}
+
 
 -(void) recycRes{
     

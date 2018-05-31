@@ -26,8 +26,8 @@
 @property(nonatomic,strong) UILabel* equSpaceLabel;
 @property(nonatomic,strong) UIButton* equSpaceSwitchBtn;
 @property(nonatomic,copy) NSString* curSwitchBtnImgName;
-@property(nonatomic,strong) EquOrSpaceView* gridCellItemView;
 
+@property(nonatomic,strong) NSMutableArray* equOrSpaceItemList;
 @property(nonatomic,strong) NSMutableArray* equOrSpaceList;
 
 
