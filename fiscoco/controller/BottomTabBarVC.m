@@ -37,33 +37,33 @@
     self.homeVC = [[HomeVC alloc] init];
     self.homeVC.tabBarItem.title = NSLocalizedString(@"homePage",nil);
     self.homeVC.tabBarItem.tag = 0;
-    UIImage* selectImg = [UIImage imageNamed:@"ic_main_tab_find_pre"];
+    UIImage* selectImg = [UIImage imageNamed:@"main_index_pressed"];
     self.homeVC.tabBarItem.selectedImage = [selectImg imageByScalingToSize:CGSizeMake(30, 30)];
-    UIImage* normalImg = [UIImage imageNamed:@"ic_main_tab_find_nor"];
+    UIImage* normalImg = [UIImage imageNamed:@"main_index_normal"];
     self.homeVC.tabBarItem.image = [normalImg imageByScalingToSize:CGSizeMake(30, 30)];
     
     self.mallVC = [[MallVC alloc] init];
     self.mallVC.tabBarItem.title = NSLocalizedString(@"mall",nil);
     self.mallVC.tabBarItem.tag = 1;
-    UIImage* mallSelectImg = [UIImage imageNamed:@"ic_main_tab_find_pre"];
+    UIImage* mallSelectImg = [UIImage imageNamed:@"main_store_passred"];
     self.mallVC.tabBarItem.selectedImage = [mallSelectImg imageByScalingToSize:CGSizeMake(30, 30)];
-    UIImage* mallNormalImg = [UIImage imageNamed:@"ic_main_tab_find_nor"];
+    UIImage* mallNormalImg = [UIImage imageNamed:@"main_store_normal"];
     self.mallVC.tabBarItem.image = [mallNormalImg imageByScalingToSize:CGSizeMake(30, 30)];
     
     self.discoverVC = [[DiscoverVC alloc] init];
     self.discoverVC.tabBarItem.title = NSLocalizedString(@"discover",nil);
     self.discoverVC.tabBarItem.tag = 0;
-    UIImage* dis_selectImg = [UIImage imageNamed:@"ic_main_tab_find_pre"];
+    UIImage* dis_selectImg = [UIImage imageNamed:@"main_find_pressed"];
     self.discoverVC.tabBarItem.selectedImage = [dis_selectImg imageByScalingToSize:CGSizeMake(30, 30)];
-    UIImage* dis_normal = [UIImage imageNamed:@"ic_main_tab_find_nor"];
+    UIImage* dis_normal = [UIImage imageNamed:@"main_find_normal"];
     self.discoverVC.tabBarItem.image = [dis_normal imageByScalingToSize:CGSizeMake(30, 30)];
     
     self.mineVC = [[MineVC alloc] init];
     self.mineVC.tabBarItem.title = NSLocalizedString(@"mine",nil);
     self.mineVC.tabBarItem.tag = 0;
-    UIImage* mine_selectImg = [UIImage imageNamed:@"ic_main_tab_find_pre"];
+    UIImage* mine_selectImg = [UIImage imageNamed:@"main_my_pressed"];
     self.homeVC.tabBarItem.selectedImage = [mine_selectImg imageByScalingToSize:CGSizeMake(30, 30)];
-    UIImage* mine_normalImg = [UIImage imageNamed:@"ic_main_tab_find_nor"];
+    UIImage* mine_normalImg = [UIImage imageNamed:@"main_my_normal"];
     self.mineVC.tabBarItem.image = [mine_normalImg imageByScalingToSize:CGSizeMake(30, 30)];
     
 
