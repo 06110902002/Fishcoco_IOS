@@ -150,6 +150,7 @@
     
     self.equAndSpaceListView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.equAndSpaceLayout];
     self.equAndSpaceListView.backgroundColor = [UIColor colorWithRed:200.0f / 255.0f green:200.0f/255.0f blue:200.0/255.0f alpha:1.0];
+    //self.equAndSpaceListView.backgroundColor = [UIColor redColor];
     self.equAndSpaceListView.tag = 24;
     
     self.equAndSpaceListView.dataSource = self;
@@ -158,7 +159,7 @@
     self.equAndSpaceListView.showsHorizontalScrollIndicator = NO;
     [self addSubview:self.equAndSpaceListView];
     [self.equAndSpaceListView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT - 260));
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT - 300));
         make.top.equalTo(topBgView.mas_bottom).offset(50);
     }];
     [self.equAndSpaceListView  registerClass:[EquOrSpaceView class] forCellWithReuseIdentifier:@"equItem"];

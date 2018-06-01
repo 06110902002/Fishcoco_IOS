@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F87C941D9E35C87EF7FA0EE /* Pods_fiscoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */; };
+		6B7A807020C142590062D43D /* PopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A806F20C142590062D43D /* PopWindow.m */; };
 		C33175D220B8210200B8EDF3 /* SceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D120B8210200B8EDF3 /* SceneView.m */; };
 		C33175D520B8236200B8EDF3 /* HomeSceneEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */; };
 		C368624D20BBF50E005E7598 /* EquOrSpaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C368624C20BBF50E005E7598 /* EquOrSpaceView.m */; };
@@ -436,6 +437,8 @@
 /* Begin PBXFileReference section */
 		0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiscoco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.release.xcconfig"; sourceTree = "<group>"; };
+		6B7A806E20C142590062D43D /* PopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopWindow.h; sourceTree = "<group>"; };
+		6B7A806F20C142590062D43D /* PopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopWindow.m; sourceTree = "<group>"; };
 		6D45FCDA3E12731E49E3325E /* Pods-fiscoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.debug.xcconfig"; sourceTree = "<group>"; };
 		C33175D020B8210200B8EDF3 /* SceneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneView.h; sourceTree = "<group>"; };
 		C33175D120B8210200B8EDF3 /* SceneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneView.m; sourceTree = "<group>"; };
@@ -1029,6 +1032,8 @@
 			children = (
 				C3E38A0D20B2D3220043DBD5 /* TopStatusView.h */,
 				C3E38A0E20B2D3220043DBD5 /* TopStatusView.m */,
+				6B7A806E20C142590062D43D /* PopWindow.h */,
+				6B7A806F20C142590062D43D /* PopWindow.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -2055,6 +2060,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E389AB20B2B8DF0043DBD5 /* ViewController.m in Sources */,
+				6B7A807020C142590062D43D /* PopWindow.m in Sources */,
 				C3E389ED20B2C4460043DBD5 /* MallVC.m in Sources */,
 				C3E389E020B2C0D70043DBD5 /* BaseViewController.m in Sources */,
 				C3E38A0A20B2CEA50043DBD5 /* UIImage+UIImageExtras.m in Sources */,
