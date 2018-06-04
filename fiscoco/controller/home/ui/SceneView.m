@@ -25,6 +25,7 @@
     self.icon = [[UIImageView alloc] init];
     self.icon.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.icon];
+    
 
     [self.icon mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(70.0, 70.0));

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F87C941D9E35C87EF7FA0EE /* Pods_fiscoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */; };
 		6B7A807020C142590062D43D /* PopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A806F20C142590062D43D /* PopWindow.m */; };
+		6BFD93E020C4DF4C00449923 /* AddDevicesOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD93DF20C4DF4C00449923 /* AddDevicesOptionsView.m */; };
 		C33175D220B8210200B8EDF3 /* SceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D120B8210200B8EDF3 /* SceneView.m */; };
 		C33175D520B8236200B8EDF3 /* HomeSceneEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */; };
 		C368624D20BBF50E005E7598 /* EquOrSpaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C368624C20BBF50E005E7598 /* EquOrSpaceView.m */; };
@@ -439,6 +440,8 @@
 		4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.release.xcconfig"; sourceTree = "<group>"; };
 		6B7A806E20C142590062D43D /* PopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopWindow.h; sourceTree = "<group>"; };
 		6B7A806F20C142590062D43D /* PopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopWindow.m; sourceTree = "<group>"; };
+		6BFD93DE20C4DF4C00449923 /* AddDevicesOptionsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDevicesOptionsView.h; sourceTree = "<group>"; };
+		6BFD93DF20C4DF4C00449923 /* AddDevicesOptionsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddDevicesOptionsView.m; sourceTree = "<group>"; };
 		6D45FCDA3E12731E49E3325E /* Pods-fiscoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.debug.xcconfig"; sourceTree = "<group>"; };
 		C33175D020B8210200B8EDF3 /* SceneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneView.h; sourceTree = "<group>"; };
 		C33175D120B8210200B8EDF3 /* SceneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneView.m; sourceTree = "<group>"; };
@@ -933,6 +936,8 @@
 				C33175D120B8210200B8EDF3 /* SceneView.m */,
 				C368624B20BBF50E005E7598 /* EquOrSpaceView.h */,
 				C368624C20BBF50E005E7598 /* EquOrSpaceView.m */,
+				6BFD93DE20C4DF4C00449923 /* AddDevicesOptionsView.h */,
+				6BFD93DF20C4DF4C00449923 /* AddDevicesOptionsView.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -2076,6 +2081,7 @@
 				C368625020BBF553005E7598 /* EquOrSpaceEntity.m in Sources */,
 				C3E389F020B2C46A0043DBD5 /* DiscoverVC.m in Sources */,
 				C368624D20BBF50E005E7598 /* EquOrSpaceView.m in Sources */,
+				6BFD93E020C4DF4C00449923 /* AddDevicesOptionsView.m in Sources */,
 				C33175D220B8210200B8EDF3 /* SceneView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

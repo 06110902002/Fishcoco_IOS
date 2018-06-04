@@ -290,9 +290,24 @@
     
     NSLog(@"52----------onBack");
 }
--(void) onMore{
+-(void) onMore:(UIView*)view{
     
-    NSLog(@"56----------onMore");
+    if(!self.popWindow){
+        self.popWindow = [PopWindow popover];
+    }
+    if(!self.addDevicesView){
+        self.addDevicesView = [[AddDevicesOptionsView alloc] initWithFrame:CGRectMake(0, 10, 140, 135)];
+        NSMutableArray* titles = [NSMutableArray arrayWithObjects:@"添加设备",@"添加场景",@"添加空间", nil];
+        NSMutableArray* icons = [NSMutableArray arrayWithObjects:@"index_equipment_icon",@"index_space_icon",@"index_space_icon", nil];
+        [self.addDevicesView initTitle:titles andIcon:icons];
+        
+        self.addDevicesView.onConfirm = ^void(NSUInteger tag){
+            NSLog(@"305------------:%ld",tag);
+        };
+    }
+    
+    [self.popWindow showAtView:view withContentView:self.addDevicesView];
+    
 }
 
 - (void)segmentChange:(UISegmentedControl *)sgc{

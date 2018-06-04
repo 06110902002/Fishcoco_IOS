@@ -77,7 +77,7 @@ rightOptionIsVisiable:(BOOL) visiable{
     
     if (CGRectContainsPoint(self.imgMore.bounds, [gestureRecognizer locationInView:self.imgMore])) {
         if(self.titleClickListenr){
-            [self.titleClickListenr onMore];
+            [self.titleClickListenr onMore:self.imgMore];
         }
         
     }

@@ -13,7 +13,7 @@
 @protocol TitleBarClickListener <NSObject>
 @optional
 -(void) onBack;         //点击返回的回调
--(void) onMore;         //点击更多的回调
+-(void) onMore:(UIView*) view;         //点击更多的回调
 
 @end
 

@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "TopStatusView.h"
+#import "PopWindow.h"
+#import "AddDevicesOptionsView.h"
 
 @class EquOrSpaceView;
 @interface HomeView : UIView<TitleBarClickListener,UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 @property(nonatomic,strong) TopStatusView* titleBarView;
+@property(nonatomic,strong) PopWindow* popWindow;
+@property(nonatomic,strong) AddDevicesOptionsView* addDevicesView;
+
 @property(nonatomic,strong) UISegmentedControl* segment;
 @property(nonatomic,strong) UICollectionView* sceneListView;
 @property(nonatomic,strong) NSMutableArray* sceneDataList;

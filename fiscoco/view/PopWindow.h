@@ -4,33 +4,179 @@
 //
 //  Created by 刘小兵 on 2018/6/1.
 //  Copyright © 2018 administrator. All rights reserved.
-//  弹出框，在任何位置弹出对话框
+//  弹出框，在任何位置弹出对话框，本类只提供一个窗口视图容器
 
 #import <UIKit/UIKit.h>
 
-//使用block 作取消的回调
-typedef void(^CancelListener)(UIView* view);
+
+/**
+ 窗口在目标控件的位置
+
+ - DXPopoverPositionUp: 控件上部
+ - DXPopoverPositionDown: 控件下部
+ */
+typedef NS_ENUM(NSUInteger, DXPopoverPosition) {
+    DXPopoverPositionUp = 1,
+    DXPopoverPositionDown,
+};
+
+
+/**
+ 透明遮罩是否可响应点击外部关闭本窗口的枚举
+
+ - DXPopoverMaskTypeBlack: 响应
+ - DXPopoverMaskTypeNone: 透明overlay不响应在外部点击关闭本窗口
+ */
+typedef NS_ENUM(NSUInteger, DXPopoverMaskType) {
+    DXPopoverMaskTypeBlack,
+    DXPopoverMaskTypeNone,
+};
+
+
 
 
 @interface PopWindow : UIView
 
+@property (nonatomic, strong, readwrite) UIControl *blackOverlay;
+@property (nonatomic, weak) UIView *containerView;
+@property (nonatomic, assign, readwrite) DXPopoverPosition popoverPosition;
+@property (nonatomic, assign) CGPoint arrowShowPoint;
+@property (nonatomic, weak) UIView *contentView;
+@property (nonatomic, assign) CGRect contentViewFrame;
+@property (nonatomic, strong) UIColor *contentColor;
+@property(nonatomic,assign)  BOOL setNeedsReset;
 
-@property(nonatomic,strong) UIView* mBgView;
-
-@property(nonatomic,strong) CancelListener onCancel;
-
-
-//声明一个block的属性
-@property(nonatomic,strong) void (^ConfirmListener)(UIView* );
-
++ (instancetype)popover;
 
 /**
- 显示
-
- @param targetView 目标视图
- @param titlesAndIcons 文本与图标
- @param isClose 触摸外面是否可关闭本弹窗
+ *  The contentView positioned in container, default is zero;
  */
--(void) show :(UIView*) targetView withOptions:(NSDictionary*) titlesAndIcons isTouchOutSideClose:(BOOL) isClose;
+@property (nonatomic, assign) UIEdgeInsets contentInset;
+
+/**
+ *  If the popover is stay up or down the showPoint
+ */
+//@property (nonatomic, assign, readonly) DXPopoverPosition popoverPosition;
+
+/**
+ *  The popover arrow size, default is {10.0, 10.0};
+ */
+@property (nonatomic, assign) CGSize arrowSize;
+
+/**
+ *  The popover corner radius, default is 7.0;
+ */
+@property (nonatomic, assign) CGFloat cornerRadius;
+
+/**
+ *  The popover animation show in duration, default is 0.4;
+ */
+@property (nonatomic, assign) CGFloat animationIn;
+
+/**
+ *  The popover animation dismiss duration, default is 0.3;
+ */
+@property (nonatomic, assign) CGFloat animationOut;
+
+/**
+ *  If the drop in animation using spring animation, default is YES;
+ */
+@property (nonatomic, assign) BOOL animationSpring;
+
+/**
+ *  The background of the popover, default is DXPopoverMaskTypeBlack;
+ */
+@property (nonatomic, assign) DXPopoverMaskType maskType;
+
+/**
+ *  If maskType does not satisfy your need, use blackoverylay to control the touch
+ * event(userInterfaceEnabled) for
+ * background color
+ */
+//@property (nonatomic, strong, readonly) UIControl *blackOverlay;
+
+/**
+ *  If the popover has the shadow behind it, default is YES, if you wanna custom the shadow, set it
+ * by
+ * popover.layer.shadowColor, shadowOffset, shadowOpacity, shadowRadius
+ */
+@property (nonatomic, assign) BOOL applyShadow;
+
+/**
+ *  when you using atView show API, this value will be used as the distance between popovers'arrow
+ * and atView. Note:
+ * this value is invalid when popover show using the atPoint API
+ */
+@property (nonatomic, assign) CGFloat betweenAtViewAndArrowHeight;
+
+/**
+ * Decide the nearest edge between the containerView's border and popover, default is 4.0
+ */
+@property (nonatomic, assign) CGFloat sideEdge;
+
+/**
+ *  The callback when popover did show in the containerView
+ */
+@property (nonatomic, copy) dispatch_block_t didShowHandler;
+
+/**
+ *  The callback when popover did dismiss in the containerView;
+ */
+@property (nonatomic, copy) dispatch_block_t didDismissHandler;
+
+/**
+ *  Show API
+ *
+ *  @param point         the point in the container coordinator system.
+ *  @param position      stay up or stay down from the showAtPoint
+ *  @param contentView   the contentView to show
+ *  @param containerView the containerView to contain
+ */
+- (void)showAtPoint:(CGPoint)point
+popoverPostion:(DXPopoverPosition)position
+withContentView:(UIView *)contentView
+inView:(UIView *)containerView;
+
+/**
+ *  Lazy show API        The show point will be caluclated for you, try it!
+ *
+ *  @param atView        The view to show at
+ *  @param position      stay up or stay down from the atView, if up or down size is not enough for
+ * contentView, then it
+ * will be set correctly auto.
+ *  @param contentView   the contentView to show
+ *  @param containerView the containerView to contain
+ */
+- (void)showAtView:(UIView *)atView
+popoverPostion:(DXPopoverPosition)position
+withContentView:(UIView *)contentView
+inView:(UIView *)containerView;
+
+/**
+ *  Lazy show API        The show point and show position will be caluclated for you, try it!
+ *
+ *  @param atView        The view to show at
+ *  @param contentView   the contentView to show
+ *  @param containerView the containerView to contain
+ */
+- (void)showAtView:(UIView *)atView
+withContentView:(UIView *)contentView
+inView:(UIView *)containerView;
+
+/**
+ *  Lazy show API        The show point and show position will be caluclated for you, using
+ * application's keyWindow as
+ * containerView, try it!
+ *
+ *  @param atView        The view to show at
+ *  @param contentView   the contentView to show
+ */
+- (void)showAtView:(UIView *)atView withContentView:(UIView *)contentView;
+
+- (void)showAtView:(UIView *)atView withText:(NSAttributedString *)abs;
+- (void)showAtView:(UIView *)atView withText:(NSAttributedString *)abs inView:(UIView *)container;
+
+- (void)dismiss;
 
 @end
+
