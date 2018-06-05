@@ -10,6 +10,9 @@
 #import "HomeView.h"
 #import "Masonry.h"
 #import "Constants.h"
+#import "SymmetricEncoder.h"
+#import "HttpRequest.h"
+
 
 
 @interface HomeVC ()
@@ -20,8 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self initTitleBar:@"air_high_speed" rightOptionsIcon:@"ic_f1_add" rightOptionIsVisiable:TRUE];
-    //[self setTitle:@"首页"];
     [self setStatusBarBackgroundColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
     
     self.homeView = [[HomeView alloc] init];
@@ -31,6 +32,26 @@
         make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT));
     }];
     
+    [self testDes];
+    
+    
+}
+
+-(void) testDes{
+    
+    NSString* str1 = [SymmetricEncoder aes256_encrypt:@"AES" Encrypttext:@"liuhulai"];
+    NSString* test = [SymmetricEncoder aes256_decrypt:@"AES" Decrypttext:str1];
+    NSLog(@"37---------:%@",test);
+    
+//    HttpRequest *request = [[HttpRequest alloc] init];
+//    request.URLString = @"https://www.baidu.com"; //设置请求
+//    request.parameters = nil; //设置请求参数
+//    //实现回调方法，处理请求回来的数据
+//    request.dataHandler = ^(id _Nullable responseObject) {
+//        NSLog(@"151------request:%@",responseObject);
+//    };
+//
+//    [request SingleRequest:request];
 }
 
 

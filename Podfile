@@ -6,4 +6,5 @@ use_frameworks!
 
 target 'fiscoco' do
     pod 'Masonry'
+    pod 'AFNetworking', '~> 3.0'
 end

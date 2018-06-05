@@ -18,12 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds] ;
     
     BottomTabBarVC* bottomMenu = [[BottomTabBarVC alloc] init];
     self.window.rootViewController = bottomMenu;
-    [self.window makeKeyAndVisible] ;
+    [self.window makeKeyAndVisible];
     
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
     return YES;
 }

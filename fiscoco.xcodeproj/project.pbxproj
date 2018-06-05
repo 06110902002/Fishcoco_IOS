@@ -9,7 +9,22 @@
 /* Begin PBXBuildFile section */
 		5F87C941D9E35C87EF7FA0EE /* Pods_fiscoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */; };
 		6B7A807020C142590062D43D /* PopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A806F20C142590062D43D /* PopWindow.m */; };
+		6BB86D7720C6825100433FB6 /* DevicesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D7620C6825100433FB6 /* DevicesVC.m */; };
+		6BB86D7D20C6865400433FB6 /* DeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D7C20C6865400433FB6 /* DeviceView.m */; };
+		6BB86D8020C6869400433FB6 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D7F20C6869400433FB6 /* BaseView.m */; };
+		6BB86D8320C6992800433FB6 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D8220C6992800433FB6 /* BaseModel.m */; };
+		6BB86D8620C699F000433FB6 /* BaseTabViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D8520C699F000433FB6 /* BaseTabViewCell.m */; };
+		6BB86D8920C69A9400433FB6 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D8820C69A9400433FB6 /* BaseTableView.m */; };
+		6BB86D8D20C69B8500433FB6 /* ScrollViewHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D8C20C69B8500433FB6 /* ScrollViewHeadView.m */; };
+		6BB86D9120C69C3B00433FB6 /* ScrollViewRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D9020C69C3B00433FB6 /* ScrollViewRefreshView.m */; };
+		6BB86D9720C69D0100433FB6 /* BaseRefreshHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D9620C69D0100433FB6 /* BaseRefreshHeadView.m */; };
+		6BB86D9A20C69FF100433FB6 /* DevicesTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D9920C69FF100433FB6 /* DevicesTabView.m */; };
+		6BB86D9D20C6A04500433FB6 /* DevicesTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D9C20C6A04500433FB6 /* DevicesTabCell.m */; };
+		6BB86DA020C6A0A200433FB6 /* DevicesEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D9F20C6A0A200433FB6 /* DevicesEntity.m */; };
 		6BFD93E020C4DF4C00449923 /* AddDevicesOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD93DF20C4DF4C00449923 /* AddDevicesOptionsView.m */; };
+		6BFD93E220C50B2200449923 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFD93E120C50B2200449923 /* Images.xcassets */; };
+		6BFD93E620C5263200449923 /* SymmetricEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD93E520C5263200449923 /* SymmetricEncoder.m */; };
+		6BFD93E920C5405600449923 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD93E820C5405500449923 /* HttpRequest.m */; };
 		C33175D220B8210200B8EDF3 /* SceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D120B8210200B8EDF3 /* SceneView.m */; };
 		C33175D520B8236200B8EDF3 /* HomeSceneEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C33175D420B8236200B8EDF3 /* HomeSceneEntity.m */; };
 		C368624D20BBF50E005E7598 /* EquOrSpaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C368624C20BBF50E005E7598 /* EquOrSpaceView.m */; };
@@ -440,8 +455,37 @@
 		4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.release.xcconfig"; sourceTree = "<group>"; };
 		6B7A806E20C142590062D43D /* PopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopWindow.h; sourceTree = "<group>"; };
 		6B7A806F20C142590062D43D /* PopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopWindow.m; sourceTree = "<group>"; };
+		6BB86D7520C6825100433FB6 /* DevicesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevicesVC.h; sourceTree = "<group>"; };
+		6BB86D7620C6825100433FB6 /* DevicesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicesVC.m; sourceTree = "<group>"; };
+		6BB86D7B20C6865400433FB6 /* DeviceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceView.h; sourceTree = "<group>"; };
+		6BB86D7C20C6865400433FB6 /* DeviceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceView.m; sourceTree = "<group>"; };
+		6BB86D7E20C6869400433FB6 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		6BB86D7F20C6869400433FB6 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		6BB86D8120C6992800433FB6 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		6BB86D8220C6992800433FB6 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		6BB86D8420C699F000433FB6 /* BaseTabViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabViewCell.h; sourceTree = "<group>"; };
+		6BB86D8520C699F000433FB6 /* BaseTabViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabViewCell.m; sourceTree = "<group>"; };
+		6BB86D8720C69A9400433FB6 /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		6BB86D8820C69A9400433FB6 /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
+		6BB86D8B20C69B8500433FB6 /* ScrollViewHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewHeadView.h; sourceTree = "<group>"; };
+		6BB86D8C20C69B8500433FB6 /* ScrollViewHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewHeadView.m; sourceTree = "<group>"; };
+		6BB86D8F20C69C3B00433FB6 /* ScrollViewRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewRefreshView.h; sourceTree = "<group>"; };
+		6BB86D9020C69C3B00433FB6 /* ScrollViewRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewRefreshView.m; sourceTree = "<group>"; };
+		6BB86D9520C69D0100433FB6 /* BaseRefreshHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRefreshHeadView.h; sourceTree = "<group>"; };
+		6BB86D9620C69D0100433FB6 /* BaseRefreshHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRefreshHeadView.m; sourceTree = "<group>"; };
+		6BB86D9820C69FF100433FB6 /* DevicesTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevicesTabView.h; sourceTree = "<group>"; };
+		6BB86D9920C69FF100433FB6 /* DevicesTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicesTabView.m; sourceTree = "<group>"; };
+		6BB86D9B20C6A04500433FB6 /* DevicesTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevicesTabCell.h; sourceTree = "<group>"; };
+		6BB86D9C20C6A04500433FB6 /* DevicesTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicesTabCell.m; sourceTree = "<group>"; };
+		6BB86D9E20C6A0A200433FB6 /* DevicesEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevicesEntity.h; sourceTree = "<group>"; };
+		6BB86D9F20C6A0A200433FB6 /* DevicesEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicesEntity.m; sourceTree = "<group>"; };
 		6BFD93DE20C4DF4C00449923 /* AddDevicesOptionsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDevicesOptionsView.h; sourceTree = "<group>"; };
 		6BFD93DF20C4DF4C00449923 /* AddDevicesOptionsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddDevicesOptionsView.m; sourceTree = "<group>"; };
+		6BFD93E120C50B2200449923 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6BFD93E420C5263200449923 /* SymmetricEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymmetricEncoder.h; sourceTree = "<group>"; };
+		6BFD93E520C5263200449923 /* SymmetricEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymmetricEncoder.m; sourceTree = "<group>"; };
+		6BFD93E720C5405500449923 /* HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		6BFD93E820C5405500449923 /* HttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		6D45FCDA3E12731E49E3325E /* Pods-fiscoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.debug.xcconfig"; sourceTree = "<group>"; };
 		C33175D020B8210200B8EDF3 /* SceneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneView.h; sourceTree = "<group>"; };
 		C33175D120B8210200B8EDF3 /* SceneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneView.m; sourceTree = "<group>"; };
@@ -920,6 +964,80 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		6BB86D7420C6822A00433FB6 /* devices */ = {
+			isa = PBXGroup;
+			children = (
+				6BB86D7A20C6830700433FB6 /* view */,
+				6BB86D7920C682FF00433FB6 /* model */,
+				6BB86D7820C682FA00433FB6 /* ui */,
+				6BB86D7520C6825100433FB6 /* DevicesVC.h */,
+				6BB86D7620C6825100433FB6 /* DevicesVC.m */,
+			);
+			path = devices;
+			sourceTree = "<group>";
+		};
+		6BB86D7820C682FA00433FB6 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		6BB86D7920C682FF00433FB6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6BB86D9E20C6A0A200433FB6 /* DevicesEntity.h */,
+				6BB86D9F20C6A0A200433FB6 /* DevicesEntity.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6BB86D7A20C6830700433FB6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6BB86D7B20C6865400433FB6 /* DeviceView.h */,
+				6BB86D7C20C6865400433FB6 /* DeviceView.m */,
+				6BB86D9820C69FF100433FB6 /* DevicesTabView.h */,
+				6BB86D9920C69FF100433FB6 /* DevicesTabView.m */,
+				6BB86D9B20C6A04500433FB6 /* DevicesTabCell.h */,
+				6BB86D9C20C6A04500433FB6 /* DevicesTabCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6BB86D8A20C69B5900433FB6 /* refreshview */ = {
+			isa = PBXGroup;
+			children = (
+				6BB86D8B20C69B8500433FB6 /* ScrollViewHeadView.h */,
+				6BB86D8C20C69B8500433FB6 /* ScrollViewHeadView.m */,
+				6BB86D8F20C69C3B00433FB6 /* ScrollViewRefreshView.h */,
+				6BB86D9020C69C3B00433FB6 /* ScrollViewRefreshView.m */,
+				6BB86D9520C69D0100433FB6 /* BaseRefreshHeadView.h */,
+				6BB86D9620C69D0100433FB6 /* BaseRefreshHeadView.m */,
+			);
+			path = refreshview;
+			sourceTree = "<group>";
+		};
+		6BB86D8E20C69B9600433FB6 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				6BB86D8420C699F000433FB6 /* BaseTabViewCell.h */,
+				6BB86D8520C699F000433FB6 /* BaseTabViewCell.m */,
+				6BB86D8720C69A9400433FB6 /* BaseTableView.h */,
+				6BB86D8820C69A9400433FB6 /* BaseTableView.m */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		6BFD93E320C5260400449923 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				6BFD93E420C5263200449923 /* SymmetricEncoder.h */,
+				6BFD93E520C5263200449923 /* SymmetricEncoder.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		79A9F851D5651B7E0011825E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -978,6 +1096,7 @@
 		C3E389A520B2B8DE0043DBD5 /* fiscoco */ = {
 			isa = PBXGroup;
 			children = (
+				6BFD93E320C5260400449923 /* utils */,
 				C3E38A1020B2DEB20043DBD5 /* res */,
 				C3E38A0B20B2CFFF0043DBD5 /* defines */,
 				C3E38A0720B2CE780043DBD5 /* widgt */,
@@ -993,6 +1112,7 @@
 				C3E389B420B2B8DF0043DBD5 /* Info.plist */,
 				C3E389B520B2B8DF0043DBD5 /* main.m */,
 				C3E38A0020B2C96F0043DBD5 /* Localizable.strings */,
+				6BFD93E120C50B2200449923 /* Images.xcassets */,
 			);
 			path = fiscoco;
 			sourceTree = "<group>";
@@ -1018,6 +1138,7 @@
 		C3E389D820B2BA3F0043DBD5 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				6BB86D7420C6822A00433FB6 /* devices */,
 				C3E389E420B2C2B00043DBD5 /* mine */,
 				C3E389E320B2C2A30043DBD5 /* discover */,
 				C3E389E220B2C2970043DBD5 /* mall */,
@@ -1035,10 +1156,14 @@
 		C3E389D920B2BAAA0043DBD5 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				6BB86D8E20C69B9600433FB6 /* tableview */,
+				6BB86D8A20C69B5900433FB6 /* refreshview */,
 				C3E38A0D20B2D3220043DBD5 /* TopStatusView.h */,
 				C3E38A0E20B2D3220043DBD5 /* TopStatusView.m */,
 				6B7A806E20C142590062D43D /* PopWindow.h */,
 				6B7A806F20C142590062D43D /* PopWindow.m */,
+				6BB86D7E20C6869400433FB6 /* BaseView.h */,
+				6BB86D7F20C6869400433FB6 /* BaseView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1046,6 +1171,10 @@
 		C3E389DA20B2BAC00043DBD5 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				6BFD93E720C5405500449923 /* HttpRequest.h */,
+				6BFD93E820C5405500449923 /* HttpRequest.m */,
+				6BB86D8120C6992800433FB6 /* BaseModel.h */,
+				6BB86D8220C6992800433FB6 /* BaseModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1679,6 +1808,7 @@
 				C3BFF0FB20B6D7AB001EFBF0 /* index_scene_icon_daytoday.png in Resources */,
 				C3BFF1F120B6D7AB001EFBF0 /* main_log_link_list_botton_bg_gray.png in Resources */,
 				C3BFF1E920B6D7AB001EFBF0 /* dvd_exit_base_select.png in Resources */,
+				6BFD93E220C50B2200449923 /* Images.xcassets in Resources */,
 				C3BFF14020B6D7AB001EFBF0 /* add_space_new_bath.png in Resources */,
 				C3BFF0E820B6D7AB001EFBF0 /* air_up_down_speed_select.png in Resources */,
 				C3BFF11620B6D7AB001EFBF0 /* equipment_switch.png in Resources */,
@@ -2028,10 +2158,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2066,22 +2198,36 @@
 			files = (
 				C3E389AB20B2B8DF0043DBD5 /* ViewController.m in Sources */,
 				6B7A807020C142590062D43D /* PopWindow.m in Sources */,
+				6BFD93E620C5263200449923 /* SymmetricEncoder.m in Sources */,
+				6BB86D9720C69D0100433FB6 /* BaseRefreshHeadView.m in Sources */,
+				6BB86D8620C699F000433FB6 /* BaseTabViewCell.m in Sources */,
+				6BB86D9D20C6A04500433FB6 /* DevicesTabCell.m in Sources */,
 				C3E389ED20B2C4460043DBD5 /* MallVC.m in Sources */,
+				6BB86D9120C69C3B00433FB6 /* ScrollViewRefreshView.m in Sources */,
+				6BFD93E920C5405600449923 /* HttpRequest.m in Sources */,
 				C3E389E020B2C0D70043DBD5 /* BaseViewController.m in Sources */,
 				C3E38A0A20B2CEA50043DBD5 /* UIImage+UIImageExtras.m in Sources */,
 				C3E38A0F20B2D3220043DBD5 /* TopStatusView.m in Sources */,
 				C3E389F320B2C47C0043DBD5 /* MineVC.m in Sources */,
 				C3E389B620B2B8DF0043DBD5 /* main.m in Sources */,
 				C3BFF25F20B6D9EC001EFBF0 /* HomeView.m in Sources */,
+				6BB86D8020C6869400433FB6 /* BaseView.m in Sources */,
 				C3E38A0620B2CAE60043DBD5 /* UILabel+LabelHeightAndWidth.m in Sources */,
 				C3E389E720B2C2EE0043DBD5 /* HomeVC.m in Sources */,
+				6BB86D9A20C69FF100433FB6 /* DevicesTabView.m in Sources */,
+				6BB86DA020C6A0A200433FB6 /* DevicesEntity.m in Sources */,
 				C3E389A820B2B8DF0043DBD5 /* AppDelegate.m in Sources */,
+				6BB86D7720C6825100433FB6 /* DevicesVC.m in Sources */,
+				6BB86D7D20C6865400433FB6 /* DeviceView.m in Sources */,
+				6BB86D8D20C69B8500433FB6 /* ScrollViewHeadView.m in Sources */,
+				6BB86D8920C69A9400433FB6 /* BaseTableView.m in Sources */,
 				C3E389EA20B2C35A0043DBD5 /* BottomTabBarVC.m in Sources */,
 				C33175D520B8236200B8EDF3 /* HomeSceneEntity.m in Sources */,
 				C368625020BBF553005E7598 /* EquOrSpaceEntity.m in Sources */,
 				C3E389F020B2C46A0043DBD5 /* DiscoverVC.m in Sources */,
 				C368624D20BBF50E005E7598 /* EquOrSpaceView.m in Sources */,
 				6BFD93E020C4DF4C00449923 /* AddDevicesOptionsView.m in Sources */,
+				6BB86D8320C6992800433FB6 /* BaseModel.m in Sources */,
 				C33175D220B8210200B8EDF3 /* SceneView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2259,6 +2405,7 @@
 			baseConfigurationReference = 6D45FCDA3E12731E49E3325E /* Pods-fiscoco.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E8EDB4JZ8F;
 				INFOPLIST_FILE = fiscoco/Info.plist;
@@ -2274,6 +2421,7 @@
 			baseConfigurationReference = 4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E8EDB4JZ8F;
 				INFOPLIST_FILE = fiscoco/Info.plist;

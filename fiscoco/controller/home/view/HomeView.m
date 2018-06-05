@@ -13,6 +13,7 @@
 #import "HomeSceneEntity.h"
 #import "EquOrSpaceEntity.h"
 #import "EquOrSpaceView.h"
+#import "DevicesVC.h"
 
 @implementation HomeView
 
@@ -288,7 +289,7 @@
 //顶部返回点击的回调
 -(void) onBack{
     
-    NSLog(@"52----------onBack");
+    NSLog(@"52----------HomeView onBack");
 }
 -(void) onMore:(UIView*)view{
     
@@ -301,8 +302,11 @@
         NSMutableArray* icons = [NSMutableArray arrayWithObjects:@"index_equipment_icon",@"index_space_icon",@"index_space_icon", nil];
         [self.addDevicesView initTitle:titles andIcon:icons];
         
+        typeof(self) __weak weakSelf = self;
         self.addDevicesView.onConfirm = ^void(NSUInteger tag){
             NSLog(@"305------------:%ld",tag);
+            DevicesVC* dvc = [[DevicesVC alloc] init];
+            [weakSelf.window.rootViewController presentModalViewController: dvc animated:YES];
         };
     }
     

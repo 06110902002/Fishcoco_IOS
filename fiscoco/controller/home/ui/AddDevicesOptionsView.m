@@ -66,7 +66,6 @@
     if(self.onConfirm){
         self.onConfirm(label.tag);
     }
-    
 }
 
 @end
