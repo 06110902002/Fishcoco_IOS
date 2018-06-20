@@ -11,7 +11,7 @@
 
 @interface DevicesEntity : BaseModel
 
-@property(nonatomic,copy) NSString* name;
+
 @property(nonatomic,strong) NSMutableArray* condList;
 @property(nonatomic,strong) NSMutableArray* actList;
 @property(nonatomic,assign) BOOL open;

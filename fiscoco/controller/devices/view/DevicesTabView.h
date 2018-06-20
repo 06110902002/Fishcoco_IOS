@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BaseTableView.h"
 
+
 @interface DevicesTabView : BaseTableView
+
+@property(nonatomic,strong)BaseTabViewCell* mCellView;
 
 @end

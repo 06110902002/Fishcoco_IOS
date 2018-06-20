@@ -9,7 +9,6 @@
 #import "BaseTableView.h"
 #import "Constants.h"
 #import "BaseModel.h"
-#import "BaseTabViewCell.h"
 
 
 #import "BaseRefreshHeadView.h"
@@ -102,7 +101,7 @@
     return self.scrollFootView;
 }
 
--(void(^)()) buildLoadMoreListener{
+-(void(^)(void)) buildLoadMoreListener{
     
     LoadMoreBlock loadMore = ^(){
         

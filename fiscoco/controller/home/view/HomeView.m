@@ -306,6 +306,7 @@
         self.addDevicesView.onConfirm = ^void(NSUInteger tag){
             NSLog(@"305------------:%ld",tag);
             DevicesVC* dvc = [[DevicesVC alloc] init];
+            [weakSelf.popWindow dismiss];
             [weakSelf.window.rootViewController presentModalViewController: dvc animated:YES];
         };
     }

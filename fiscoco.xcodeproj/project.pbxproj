@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F87C941D9E35C87EF7FA0EE /* Pods_fiscoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */; };
+		6B0301B920DA05080027FECA /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0301B820DA05080027FECA /* FileUtils.m */; };
 		6B7A807020C142590062D43D /* PopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A806F20C142590062D43D /* PopWindow.m */; };
 		6BB86D7720C6825100433FB6 /* DevicesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D7620C6825100433FB6 /* DevicesVC.m */; };
 		6BB86D7D20C6865400433FB6 /* DeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB86D7C20C6865400433FB6 /* DeviceView.m */; };
@@ -453,6 +454,8 @@
 /* Begin PBXFileReference section */
 		0A4DCDCFC04D811FDEB0E09C /* Pods_fiscoco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiscoco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0C9110DD1FF1E5CB1480CE /* Pods-fiscoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiscoco.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiscoco/Pods-fiscoco.release.xcconfig"; sourceTree = "<group>"; };
+		6B0301B720DA05080027FECA /* FileUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
+		6B0301B820DA05080027FECA /* FileUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
 		6B7A806E20C142590062D43D /* PopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopWindow.h; sourceTree = "<group>"; };
 		6B7A806F20C142590062D43D /* PopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopWindow.m; sourceTree = "<group>"; };
 		6BB86D7520C6825100433FB6 /* DevicesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevicesVC.h; sourceTree = "<group>"; };
@@ -1021,8 +1024,8 @@
 		6BB86D8E20C69B9600433FB6 /* tableview */ = {
 			isa = PBXGroup;
 			children = (
-				6BB86D8420C699F000433FB6 /* BaseTabViewCell.h */,
 				6BB86D8520C699F000433FB6 /* BaseTabViewCell.m */,
+				6BB86D8420C699F000433FB6 /* BaseTabViewCell.h */,
 				6BB86D8720C69A9400433FB6 /* BaseTableView.h */,
 				6BB86D8820C69A9400433FB6 /* BaseTableView.m */,
 			);
@@ -1034,6 +1037,8 @@
 			children = (
 				6BFD93E420C5263200449923 /* SymmetricEncoder.h */,
 				6BFD93E520C5263200449923 /* SymmetricEncoder.m */,
+				6B0301B720DA05080027FECA /* FileUtils.h */,
+				6B0301B820DA05080027FECA /* FileUtils.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -2229,6 +2234,7 @@
 				6BFD93E020C4DF4C00449923 /* AddDevicesOptionsView.m in Sources */,
 				6BB86D8320C6992800433FB6 /* BaseModel.m in Sources */,
 				C33175D220B8210200B8EDF3 /* SceneView.m in Sources */,
+				6B0301B920DA05080027FECA /* FileUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

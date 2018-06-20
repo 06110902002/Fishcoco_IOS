@@ -22,6 +22,18 @@
     
 }
 
+
+//留给子类类扩展
+-(void) bindClickListener:(id<CellClickListener>) click{
+    
+}
+
+//留给子类类扩展
+-(UIView*) getViewByTag:(NSInteger)tag{
+    return nil;
+}
+
+
 //回收资源接口
 -(void) recycRes{
     

@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ScrollViewRefreshView.h"
 #import "ScrollViewHeadView.h"
+#import "BaseTabViewCell.h"
 
-@class BaseTabViewCell;
 @class BaseRefreshHeadView;
 
 
@@ -20,7 +20,7 @@
 /**
  消息页面，列表基类
  */
-@interface BaseTableView : UITableView<UITableViewDataSource,UITableViewDelegate,CAAnimationDelegate>
+@interface BaseTableView : UITableView<UITableViewDataSource,UITableViewDelegate,CAAnimationDelegate,CellClickListener>
 
 
 @property(nonatomic,strong)UITableView* mTableView;

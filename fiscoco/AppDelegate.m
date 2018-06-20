@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
-    
+    //[NSThread sleepForTimeInterval:5];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds] ;
     
     BottomTabBarVC* bottomMenu = [[BottomTabBarVC alloc] init];

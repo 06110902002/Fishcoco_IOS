@@ -26,9 +26,21 @@
 -(void) initItemView{
     
     self.selectionStyle = UITableViewCellSelectionStyleNone; //取消点击时背景色
+    self.nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, (self.frame.size.height - 40) / 2, self.frame.size.width, 40)];
+    self.nameLabel.text = @"test";
+    self.nameLabel.textColor = [UIColor blueColor];
+    self.nameLabel.font = [UIFont systemFontOfSize:15];
+    [self addSubview: self.nameLabel];
     
-   
+    self.linkIcon = [[UIImageView alloc] initWithFrame:CGRectMake(5, (self.frame.size.height - 35) / 2, 35, 35)];
+    self.linkIcon.contentMode = UIViewContentModeRedraw;
+    self.linkIcon.image = [UIImage imageNamed:@"space_equipment_normal"];
+    self.linkIcon.userInteractionEnabled = true;
+    self.linkIcon.tag = 23;
+    [self addSubview:self.linkIcon];
     
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imgActionDown:)];
+    [self.linkIcon addGestureRecognizer:singleTap];
     
 }
 
@@ -38,33 +50,23 @@
     
     if(self.data != (DevicesEntity*) data){
         
+        self.nameLabel.text = data.name;
         self.data = (DevicesEntity*) data;
         
         
-        self.nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 10, self.frame.size.width, 40)];
-        self.nameLabel.text = self.data.name;
-        self.nameLabel.textColor = [UIColor blueColor];
-        self.nameLabel.font = [UIFont systemFontOfSize:15];
-        [self addSubview: self.nameLabel];
-        
     }
     
+   
 }
+
 
 -(void)imgActionDown:(UITapGestureRecognizer*) gestureRecognizer{
     
     UIView* viewClicked=[gestureRecognizer view];
-//    if (viewClicked == self.imgModify) {
-//
-//        NSLog(@"90---------self.imgModify");
-//    }
-//    else if(viewClicked==self.imgDelete)
-//    {
-//        NSLog(@"94---------self.imgDelete");
-//    }
-    
-    
-    
+    if (viewClicked.tag == 23 && self.clickListener) {
+        [self.clickListener onClick:viewClicked data:self.data];
+    }
+
 }
 
 

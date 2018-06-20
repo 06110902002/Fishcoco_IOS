@@ -99,7 +99,42 @@
 //@override method
 -(BaseTabViewCell*) buildTableViewCell{
     
-    return [[DevicesTabCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"QiuckWordsCell"];
+    self.mCellView = [[DevicesTabCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"QiuckWordsCell"];
+    self.mCellView.clickListener = self;
+    return self.mCellView;
+    
+}
+
+//- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section{
+//    return 1;
+//}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return [self.dataList count];
+//}
+
+//实现单元格的协议接口
+- (void)onClick:(UIView *)view data:(BaseModel *)data{
+    NSUInteger index = [self.dataList indexOfObject:data];
+   
+    NSArray *indexPaths = @[
+                            [NSIndexPath indexPathForRow:index + 1 inSection:0]
+                            
+                            ];
+    
+    
+    for(int i = 0;i < 1; i ++){
+        
+        DevicesEntity* model = [[DevicesEntity alloc] init];
+        model.name = [NSString stringWithFormat:@"A+%d",index];
+        [self.dataList insertObject:model atIndex:index + 1];
+    
+    }
+    //局部section刷新
+    //NSIndexSet *nd = [[NSIndexSet alloc] initWithIndex:0]; //刷新第1个section
+    //[self reloadSections:nd withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    [self insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
+    //[self reloadData];
     
 }
 
@@ -107,7 +142,7 @@
 //@override method
 -(CGFloat) getCellHeight{
     
-    return 40.0f;
+    return 50.0f;
 }
 
 
